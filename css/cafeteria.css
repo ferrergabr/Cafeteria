@@ -1,0 +1,128 @@
+/* Formatação global do site da cafeteria */
+/* Utilização do seletor asterisco(*) para 
+referenciar todas as tags html e fazer uma
+formatação para retirar as margens deste elementos
+ */
+ *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+ }
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Aplicação de altura e plano de fundo ao header. Vamos colocar uma imagem
+como plano de fundo */
+header{
+    height: 600px; /*altura do header em 300px*/
+    background-image: url("../img/fundo7.jpg");/*Imagem de fundo*/
+    background-size: 100%; /*redimensionar o plano de fundo para 100% da tela*/
+    background-position: 0 -200px;/*posição do plano de fundo, onde o primeiro valor
+    é x, ou seja, posição horizontal e o segundo valor é y, posição vertical*/
+    transition: ease 1s;
+}
+header nav{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding:20px 500px;
+    text-align: center;
+    
+}
+
+header nav ul {
+    /*remover os marcadores*/
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul li{
+    /*dispor os links um ao lado do outro*/
+    flex: 1;
+    
+}
+
+header nav ul li img{
+    width: 100px;
+    height: 80px;
+
+}
+.nav-header{
+    flex: 0.5;
+}
+header nav ul li a{
+    font-family: arial;
+    font-size: 12pt;
+    color: #fff;
+    text-decoration: none;
+}
+.checkout{
+    position: absolute;
+    right: 10px;
+    top:10px;
+    padding:10px
+}
+nav ion-icon{
+    width: 30px;
+    height: 30px;
+}
+
+footer{
+    background-color: rgb(26, 35, 42);
+    color:#fff;
+    font-family: "arial";
+}
+
+.em-linha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.uma-fracao{
+    flex: 1;
+    margin:10px;
+    text-align: center;
+}
+.img-parceiros{
+    width: 100px;
+    height: 80px;   
+    filter: invert(30%) sepia(100%) hue-rotate(200deg)
+}
+footer ul{
+    list-style: none; /*tirar os marcadores dos links*/
+}
+.uma-fracao p{
+    font-size: 13pt;
+    font-family: 'Lucida Sans';
+    font-weight: lighter;
+    color:rgba(255,255,255,0.5);
+}
+.uma-fracao ion-icon{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    margin:10px
+}
+
+.end-footer{
+    background-color: rgb(40, 53, 63);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+.end-footer a{
+    color: #fff;
+    font-size: 10pt;
+    text-decoration: none;
+}
+/*Aplicar efeitos de hover nos links*/
+header nav ul li a:hover{
+    color:#f00;
+    
+}
+
+.img-parceiros:hover{
+    filter: invert(60%) sepia(50%) hue-rotate(200deg)
+}
