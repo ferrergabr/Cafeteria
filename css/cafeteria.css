@@ -203,7 +203,9 @@ section .uma-fracao ion-icon {
 .margem-top-base {
   margin: 30px 0px;
 }
-
+.centro {
+  text-align: center;
+}
 /*cores-texto*/
 .txt-orange-1 {
   color: rgb(245, 78, 17) !important;
@@ -218,6 +220,85 @@ section .uma-fracao ion-icon {
   color: #000 !important;
 }
 
+.tirar-marcador {
+  list-style: none;
+}
+.cat-cardapio {
+  padding: 10px 20px;
+  border: 1px solid silver;
+  border-radius: 30px;
+  margin: 10px 20px;
+}
+.cat-cardapio a {
+  font-family: Arial;
+  font-size: 12pt;
+  text-decoration: none;
+  color: #333;
+}
+
+.itens-cardapio {
+  width: 200px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px #666;
+  margin: 20px 10px;
+  padding: 10px;
+  transition: ease 0.5s;
+  cursor: pointer;
+}
+.img-cardapio-arredondado {
+  border-radius: 10px;
+}
+.itens-cardapio:hover {
+  margin-top: -10px;
+  box-shadow: 0px 10px 15px #666;
+  margin-bottom: 50px;
+}
+.scroll-x {
+  overflow: hidden;
+}
+.itens-em-linha {
+  display: inline-flex;
+  margin: 0 100px;
+}
+
+.img-itens-cardapio {
+  width: 100%;
+  height: 160px;
+}
+
+.form {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.input-1 {
+  width: 100%;
+  padding: 10px;
+  font-size: 14pt;
+  display: block;
+  border: 1px solid silver;
+  outline: none;
+  margin-bottom: 20px;
+}
+.textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  padding: 10px;
+  font-size: 14pt;
+  font-family: verdana;
+}
+.btn-enviar {
+  padding: 10px;
+  border: 0;
+  background-color: darkred;
+  color: #fff;
+  font-size: 14pt;
+  cursor: pointer;
+}
 /*Cores do Materialize css*/
 .materialize-red {
   background-color: #e51c23 !important;
