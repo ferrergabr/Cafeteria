@@ -1,0 +1,32 @@
+/* definir a media query junto com as dimensões */
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  header {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  header nav {
+    padding: 50px 10px 50px 5px;
+    height: 100vh;
+    width: 200px;
+    margin-left: -200px;
+  }
+  header nav ul {
+    display: block;
+    text-align: left;
+  }
+  header nav ul li img {
+    display: none;
+  }
+  header nav ul li {
+    margin-bottom: 10px;
+  }
+  header .btn-mobile {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    font-size: 30pt;
+    font-weight: bold;
+  }
+}
