@@ -12,7 +12,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body>
+  <body onload="closeMenu()">
     <header>
       <a href="javascript:void" class="btn-mobile">
         <ion-icon name="menu-outline"></ion-icon>
@@ -42,32 +42,32 @@
       <div>
         <ul class="em-linha tirar-marcador">
           <li class="cat-cardapio">
-            <a href="javascript:void">
+            <a href="javascript:void" onclick="mudaItem('cafes')">
               <ion-icon name="cafe-outline"></ion-icon>
               cafés
             </a>
           </li>
 
           <li class="cat-cardapio">
-            <a href="javascript:void">
+            <a href="javascript:void" onclick="mudaItem('bolos')">
               <ion-icon name="server-outline"></ion-icon>
               bolos
             </a>
           </li>
           <li class="cat-cardapio">
-            <a href="javascript:void">
+            <a href="javascript:void" onclick="mudaItem('doces')">
               <ion-icon name="ice-cream-outline"></ion-icon>
               doces
             </a>
           </li>
           <li class="cat-cardapio">
-            <a href="javascript:void">
+            <a href="javascript:void" onclick="mudaItem('salgados')">
               <ion-icon name="pizza-outline"></ion-icon>
               salgados
             </a>
           </li>
           <li class="cat-cardapio">
-            <a href="javascript:void">
+            <a href="javascript:void" onclick="mudaItem('bebidas')">
               <ion-icon name="wine-outline"></ion-icon>
               bebidas
             </a>
@@ -585,7 +585,7 @@
       </div>
       <div class="end-footer">
         &copy; Copyright 2023 - Design by
-        <a href="https://www.github.com/edilsonsilva">Edilson Silva</a>
+        <a href="https://www.github.com/ferrergabr">Gabriel Ferrer</a>
         |
         <a href="javascript:void" onclick="politica();"
           >Politica de Privacidade</a
